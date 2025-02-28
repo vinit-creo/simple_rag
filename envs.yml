@@ -1,0 +1,31 @@
+name: pdf-spec-rag
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip>=23.0
+  - pytorch::pytorch
+  - pytorch::torchvision
+  - pytorch::torchaudio
+  - pip:
+    - langchain>=0.0.267
+    - pymupdf>=1.22.3
+    - sentence-transformers>=2.2.2
+    - chromadb>=0.4.6
+    - peft>=0.4.0
+    - transformers>=4.30.2
+    - accelerate>=0.21.0
+    - torch>=2.0.0
+    - gradio>=3.38.0
+    - python-dotenv>=1.0.0
+    - faiss-cpu 
+    - huggingface_hub
+    - einops
+    - protobuf
+    - tiktoken
+    - pydantic<2.0.0
+    - numpy>=1.24.0
+    - langchain-community>=0.0.10
+    - langchain-huggingface>=0.0.1
